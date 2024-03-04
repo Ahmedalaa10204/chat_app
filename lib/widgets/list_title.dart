@@ -2,7 +2,7 @@ import 'package:chat_app/colors.dart';
 import 'package:flutter/material.dart';
 
 class ListTileItem extends StatelessWidget {
-  const ListTileItem({
+  ListTileItem({
     super.key,
     required this.image,
     required this.name,

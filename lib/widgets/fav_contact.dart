@@ -3,14 +3,14 @@ import 'package:chat_app/chat/user_model.dart';
 import 'package:flutter/material.dart';
 
 class FavouriteContacts extends StatelessWidget {
-  const FavouriteContacts({
+  FavouriteContacts({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -21,7 +21,7 @@ class FavouriteContacts extends StatelessWidget {
                 fontSize: 18,
                 color: AppColors.white),
           ),
-          const SizedBox(height: 20),
+          SizedBox(height: 20),
           SizedBox(
             height: 100,
             child: ListView.separated(
@@ -33,7 +33,7 @@ class FavouriteContacts extends StatelessWidget {
                         radius: 30,
                         backgroundImage: NetworkImage(user[index].image),
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -46,7 +46,7 @@ class FavouriteContacts extends StatelessWidget {
                   );
                 },
                 separatorBuilder: (context, index) {
-                  return const SizedBox(
+                  return SizedBox(
                     width: 5,
                   );
                 },

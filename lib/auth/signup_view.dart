@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import '../widgets2/custom_button.dart';
 
 class SignUpView extends StatefulWidget {
-  const SignUpView({super.key});
+  SignUpView({super.key});
 
   @override
   State<SignUpView> createState() => _SignUpViewState();
@@ -19,36 +19,36 @@ class _SignUpViewState extends State<SignUpView> {
     return Scaffold(
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(20),
+          padding: EdgeInsets.all(20),
           child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const CircleAvatar(
+                CircleAvatar(
                   radius: 80,
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 20,
                 ),
-                const Text(
+                Text(
                   'Create A New Account',
                   style: TextStyle(fontSize: 25),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 20,
                 ),
-                const CustomTextField(
+                CustomTextField(
                   label: 'Name',
                   prefixIcon: Icons.person,
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 15,
                 ),
-                const CustomTextField(
+                CustomTextField(
                   label: 'Email',
                   prefixIcon: Icons.email,
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 15,
                 ),
                 CustomTextField(
@@ -65,28 +65,28 @@ class _SignUpViewState extends State<SignUpView> {
                           ? Icons.visibility_off_rounded
                           : Icons.remove_red_eye_rounded)),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 20,
                 ),
                 CustomButton(
                   text: 'Sign Up',
                   onPressed: () {},
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 20,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text('Already i have an account'),
+                    Text('Already i have an account'),
                     TextButton(
                         onPressed: () {
                           Navigator.of(context)
                               .pushReplacement(MaterialPageRoute(
-                            builder: (context) => const SigninView(),
+                            builder: (context) => SigninView(),
                           ));
                         },
-                        child: const Text('login'))
+                        child: Text('login'))
                   ],
                 )
               ],

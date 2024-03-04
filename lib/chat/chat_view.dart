@@ -6,7 +6,7 @@ import 'package:chat_app/widgets/list_title.dart';
 import 'package:flutter/material.dart';
 
 class ChatView extends StatelessWidget {
-  const ChatView({super.key});
+  ChatView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,15 +30,15 @@ class ChatView extends StatelessWidget {
       body: Column(
         children: [
           // fav contacts
-          const FavouriteContacts(),
-          const SizedBox(
+          FavouriteContacts(),
+          SizedBox(
             height: 10,
           ),
           Expanded(
             child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 15),
+              padding: EdgeInsets.symmetric(vertical: 15),
               decoration: BoxDecoration(
-                  borderRadius: const BorderRadius.only(
+                  borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30),
                       topRight: Radius.circular(30)),
                   color: AppColors.white),
@@ -53,7 +53,7 @@ class ChatView extends StatelessWidget {
                     );
                   },
                   separatorBuilder: (context, index) {
-                    return const Divider(
+                    return Divider(
                       indent: 30,
                       endIndent: 30,
                     );
