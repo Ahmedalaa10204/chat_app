@@ -6,4 +6,6 @@ class AppColors {
   static Color black = Colors.black;
   static Color white = Colors.white;
   static Color grey = Colors.grey;
+  static Color containarBR_S = const Color(0xff7A8194);
+  static Color containarBR_R = const Color(0xff373E4E);
 }

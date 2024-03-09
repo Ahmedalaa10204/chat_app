@@ -1,3 +1,4 @@
+import 'package:chat_app/chat/chat.dart';
 import 'package:chat_app/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -8,19 +9,23 @@ class ListTileItem extends StatelessWidget {
     required this.name,
     required this.lastMsg,
     required this.time,
-    required this.onTap,
   });
 
   final String image;
   final String name;
   final String lastMsg;
   final String time;
-  final Function() onTap;
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      onTap: onTap,
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ChatScreen(),
+            ));
+      },
       leading: CircleAvatar(
         radius: 30,
         backgroundImage: NetworkImage(image),

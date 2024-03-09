@@ -48,7 +48,6 @@ class ChatView extends StatelessWidget {
                       image: user[index].image,
                       lastMsg: user[index].lastMsg,
                       name: user[index].name,
-                      onTap: () {},
                       time: user[index].date,
                     );
                   },

@@ -1,4 +1,4 @@
-import 'package:chat_app/auth/signin_view.dart';
+import 'package:chat_app/chat/chat_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SigninView(),
+      home: ChatView(),
     );
   }
 }
